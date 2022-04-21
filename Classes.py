@@ -77,14 +77,14 @@ def multiple():
 def top_titles(nr, content_type):
     if content_type == "filmy":
         get_movies()
-            sorted(films_list, key=lambda film: film.nr_view)
-    for b in range(nr):
-        return films_list[b].title
+        sorted(films_list, key=lambda film: film.nr_view)
+            for b in range(nr):
+                return films_list[b].title
     if content_type == 2:
         get_series()
-            (films_list, key=lambda serie: serie.nr_view)
-    for b in range(nr):
-        return films_list[b].title
+        sorted(films_list, key=lambda serie: serie.nr_view)
+            for b in range(nr):
+                return films_list[b].title
 
 multiple()
 
